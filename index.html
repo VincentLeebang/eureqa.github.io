@@ -208,22 +208,37 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h4 class="subtitle has-text-centered">
-           We propose a general recipe for <i>targeted</i> distilling where we train student models using mission-focused instruction tuning
-           for a broad application class such as open information extraction. We show that this can maximally replicate LLM’s capabilities
-           for the given application class, while preserving its generalizability across semantic types and domains.
-           Using NER as a case study, we successfully distill these capabilities from LLMs into a much smaller model UniversalNER
-           that can recognize diverse types of entities or concepts in text corpora from a wide range of domains.
-           UniversalNER surpasses existing instruction-tuned models at the same size (e.g., Alpaca, Vicuna) by a large margin, and shows substantially better performance to ChatGPT.
+           We propose a novel probing method and benchmark called EUREQA. EUREQA is an entity-searching task where a model finds a missing entity 
+           based on described multi-hop relations with other entities. These deliberately designed multi-hop relations create deceptive semantic 
+           associations, and models must stick to the correct reasoning path instead of incorrect shortcuts to find the correct answer.
+
+           Experiments show that existing LLMs cannot follow correct reasoning paths and resist the attempt of greedy shortcuts. Analyses
+           provide further evidence that LLMs rely on semantic biases to solve the task instead of proper
+           reasoning, questioning the validity and generalizability of current LLMs’ high performances.
         </h4>
       </div>
     </div>
   </section>
 
   <section class="section"  style="background-color:#efeff081">
-    <div class="container is-max-desktop" id="gradio">
-      <gradio-app src="https://9d3aba4bdf257b1be7.gradio.live"></gradio-app>
+    <div class="container is-max-desktop" id="fig1">
+
+      <figure style="text-align: center;">
+        <img id="teaser" width="100%" src="images/zero_shot_domain.svg">  
+        <figcaption>
+          Zero-shot performance on different domains.
+        </figcaption>
+      </figure>
+<!--  -->
     </div>
   </section>
+
+  <figure style="text-align: center;">
+    <img id="teaser" width="100%" src="images/data_dist.svg">  
+    <figcaption>
+      Distribution of Universal NER benchmark.
+    </figcaption>
+  </figure>
 
   
 <section class="section">
