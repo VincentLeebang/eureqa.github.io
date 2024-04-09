@@ -208,13 +208,9 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h4 class="subtitle has-text-centered">
-           We propose a novel probing method and benchmark called EUREQA. EUREQA is an entity-searching task where a model finds a missing entity 
-           based on described multi-hop relations with other entities. These deliberately designed multi-hop relations create deceptive semantic 
-           associations, and models must stick to the correct reasoning path instead of incorrect shortcuts to find the correct answer.
+           We propose a novel probing method and benchmark called EUREQA. EUREQA is an entity-searching task where a model finds a missing entity based on described multi-hop relations with other entities. These deliberately designed multi-hop relations create deceptive semantic associations, and models must stick to the correct reasoning path instead of incorrect shortcuts to find the correct answer.
 
-           Experiments show that existing LLMs cannot follow correct reasoning paths and resist the attempt of greedy shortcuts. Analyses
-           provide further evidence that LLMs rely on semantic biases to solve the task instead of proper
-           reasoning, questioning the validity and generalizability of current LLMs’ high performances.
+           Experiments show that existing LLMs cannot follow correct reasoning paths and resist the attempt of greedy shortcuts. Analyses provide further evidence that LLMs rely on semantic biases to solve the task instead of proper reasoning, questioning the validity and generalizability of current LLMs’ high performances.
         </h4>
       </div>
     </div>
@@ -256,7 +252,7 @@
           In EUREQA, every question is constructed through an implicit reasoning chain. The chain is constructed by parsing DBPedia and each layer of the chain comprises three components: an entity, a fact about the entity, and a relation between the entity 
           and its counterpart from the next layer. The layers stack up to create chains with diffrent depths of reasoning. We verbolize reasoning chains into natural sentences and anonymize the entity of each layer to create the question. 
           Questions can be solved layer by layer and each layer is guaranteed to have a unique answer. EUREQA is not a knowledge game: we adopt a knowledge filtering process which ensures  that most LLMs have sufficient world knowledge to answer our questions.
-          
+          <br>
           EUREQA comprises a total of 2,991 questions of different reasoning depths and difficulties. The entities encompass a broad spectrum of topics, effectively reducing any potential bias arising from specific entity categories. 
           These data are great for analyzing the reasoning processes of LLMs
           <!-- <span style="font-variant: small-caps;">Input Device</span> -->
@@ -341,15 +337,12 @@
 </section>
  
 
-<section class="section">
-  <!-- Results. -->
+<!-- <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/5379/5379860.png"> Mission-Focused Instruction Tuning</h2>
+      <h2 class="title is-3"><img id="painting_icon" width="3%" src="images/datasetIcon.png"> Performance</h2>
     </div>
   </div>
-  <!-- </div> -->
-  <!--/ Results. -->    
 <div class="container is-max-desktop">
 
   <div class="columns is-centered">
@@ -445,7 +438,7 @@
   </div>
 
 
-</section>
+</section> -->
   
 
 
@@ -453,7 +446,7 @@
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="5%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Performance</h2>
+      <h2 class="title is-3"><img id="painting_icon" width="5%" src="images/datasetIcon.png"> Performance</h2>
     </div>
   </div>
 
