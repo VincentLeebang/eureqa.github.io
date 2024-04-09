@@ -202,7 +202,7 @@
     <div class="container is-max-desktop" id="fig1">
 
       <figure style="text-align: center;">
-        <img id="teaser" width="100%" src="images/fig1.png">  
+        <img id="teaser" width="100%" src="images/fig1.pdf">  
         <figcaption>
           LLMs make errors when correct surface-level semantic cues-entities are recursively replaced with descriptions, and the errors are likely related to token similarity. GPT-3.5-turbo is used for this example.
         </figcaption>
@@ -231,9 +231,9 @@
       <div class="content has-text-justified">
         <p>
 
-          In EUREQA, every question is constructed through an implicit reasoning chain. The chain is constructed by parsing DBPedia and each layer of the chain comprises three components: an entity, a fact about the entity, and a relation between the entity 
-          and its counterpart from the next layer. The layers stack up to create chains with diffrent depths of reasoning. We verbolize reasoning chains into natural sentences and anonymize the entity of each layer to create the question. 
-          Questions can be solved layer by layer and each layer is guaranteed to have a unique answer. EUREQA is not a knowledge game: we adopt a knowledge filtering process which ensures  that most LLMs have sufficient world knowledge to answer our questions.
+          In EUREQA, every question is constructed through an implicit reasoning chain. The chain is constructed by parsing DBPedia. Each layer comprises three components: an entity, a fact about the entity, and a relation between the entity 
+          and its counterpart from the next layer. The layers stack up to create chains with different depths of reasoning. We verbalize reasoning chains into natural sentences and anonymize the entity of each layer to create the question. 
+          Questions can be solved layer by layer and each layer is guaranteed a unique answer. EUREQA is not a knowledge game: we adopt a knowledge filtering process that ensures  that most LLMs have sufficient world knowledge to answer our questions.
           <br>
           EUREQA comprises a total of 2,991 questions of different reasoning depths and difficulties. The entities encompass a broad spectrum of topics, effectively reducing any potential bias arising from specific entity categories. 
           These data are great for analyzing the reasoning processes of LLMs
